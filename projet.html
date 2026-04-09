@@ -9,6 +9,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <body>
     <HEader>
@@ -25,50 +27,64 @@
             </ul>
         </nav>
     </HEader>
+
+
     <main class="projects-page">
-      <section >
-        <div >
-          <h1 >Mes Réalisations</h1>
-           <div >
+      <section class="projects-section">
+        <div class="container">
+          <h1 class="section-title">Mes Réalisations</h1>
+          <div class="title-underline"></div>
+    
+          <div class="projects-grid">
             <article class="project-card">
               <img src="images/e_com.JPG" alt="Site E-commerce">
-              <div>
-                <h2>Site E-commerce</h2>
+              <div class="project-content">
+                <h3>Site E-commerce</h3>
                 <p>
                   Une boutique en ligne complète développée avec HTML, CSS et
                   JavaScript pur.
                 </p>
     
-                <div>
+                <div class="tags">
                   <span>HTML</span>
                   <span>CSS</span>
                   <span>JS</span>
                 </div>
     
-                <div>
-                  <a href="#"><span>◔</span> Code</a>
-                  <a href="#"><span>↗</span> Démo</a>
+                <div class="project-links">
+                  <a href="#">
+                    <i class="fab fa-github"></i> Code
+                  </a>
+                
+                  <a href="#">
+                    <i class="fas fa-external-link-alt"></i> Démo
+                  </a>
                 </div>
               </div>
             </article>
     
-            <article>
+            <article class="project-card">
               <img src="images/gest_tache.JPG" alt="Gestionnaire de Tâches">
-              <div>
-                <h2>Gestionnaire de Tâches</h2>
+              <div class="project-content">
+                <h3>Gestionnaire de Tâches</h3>
                 <p>
                   Application web pour organiser ses projets quotidiens avec
                   stockage local.
                 </p>
     
-                <div>
+                <div class="tags">
                   <span>Python</span>
                   <span>Flask</span>
                 </div>
     
-                <div>
-                  <a href="#"><span>◔</span> Code</a>
-                  <a href="#"><span>↗</span> Démo</a>
+                <div class="project-links">
+                  <a href="#">
+                    <i class="fab fa-github"></i> Code
+                  </a>
+                
+                  <a href="#">
+                    <i class="fas fa-external-link-alt"></i> Démo
+                  </a>
                 </div>
               </div>
             </article>
@@ -76,25 +92,30 @@
             <article class="project-card">
               <img src="images/blog_perso.JPG" alt="Blog Personnel">
               <div class="project-content">
-                <h2>Blog Personnel</h2>
+                <h3>Blog Personnel</h3>
                 <p>
                   Projet en cours de migration vers Laravel pour apprendre le
                   backend.
                 </p>
     
-                <div>
+                <div class="tags">
                   <span>PHP</span>
                   <span>Laravel</span>
                 </div>
     
-                <div>
-                  <a href="#"><span>◔</span> Code</a>
-                  <a href="#"><span>●</span> Bientôt</a>
+                <div class="project-links">
+                  <a href="#">
+                    <i class="fab fa-github"></i> Code
+                  </a>
+                
+                  <a href="#">
+                    <i class="fas fa-external-link-alt"></i> Démo
+                  </a>
                 </div>
               </div>
             </article>
     
-            <article>
+            <article class="project-card">
               <img src="images/Dash_analyse.JPG" alt="Dashboard d'Analyse">
               <div class="project-content">
                 <h3>Dashboard d'Analyse</h3>
@@ -103,40 +124,52 @@
                   Matplotlib.
                 </p>
     
-                <div>
+                <div class="tags">
                   <span>Python</span>
                   <span>Data</span>
                 </div>
     
-                <div>
-                  <a href="#"><span>◔</span> Code</a>
-                  <a href="#"><span>↗</span> Démo</a>
+                <div class="project-links">
+                  <a href="#">
+                    <i class="fab fa-github"></i> Code
+                  </a>
+                
+                  <a href="#">
+                    <i class="fas fa-external-link-alt"></i> Démo
+                  </a>
                 </div>
+
               </div>
             </article>
     
-            <article>
+            <article class="project-card">
               <img src="images/Appli_meteo.JPG" alt="Application Météo">
               <div class="project-content">
-                <h2>Application Météo</h2>
+                <h3>Application Météo</h3>
                 <p>
                   Une application utilisant une API en temps réel pour afficher la
                   météo mondiale.
                 </p>
     
-                <div>
+                <div class="tags">
                   <span>JavaScript</span>
                   <span>API</span>
                 </div>
     
                 <div class="project-links">
-                  <a href="#"><span>◔</span> Code</a>
-                  <a href="#"><span>↗</span> Démo</a>
+                  <a href="#">
+                    <i class="fab fa-github"></i> Code
+                  </a>
+                
+                  <a href="#">
+                    <i class="fas fa-external-link-alt"></i> Démo
+                  </a>
                 </div>
+
               </div>
             </article>
     
-            <article>
+            <article class="project-card">
               <img src="images/maquet_UI.JPG" alt="Maquette Mobile UI">
               <div class="project-content">
                 <h3>Maquette Mobile UI</h3>
@@ -145,15 +178,21 @@
                   application de fitness.
                 </p>
     
-                <div>
+                <div class="tags">
                   <span>Figma</span>
                   <span>Design</span>
                 </div>
     
-                <div>
-                  <a href="#"><span>⌘</span> Design</a>
-                  <a href="#"><span>◉</span> Aperçu</a>
+                <div class="project-links">
+                  <a href="#">
+                    <i class="fab fa-github"></i> Code
+                  </a>
+                
+                  <a href="#">
+                    <i class="fas fa-external-link-alt"></i> Démo
+                  </a>
                 </div>
+                
               </div>
             </article>
           </div>
