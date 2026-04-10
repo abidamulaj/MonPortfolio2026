@@ -354,153 +354,524 @@ footer a:hover{
   .project-card img {
     height: 200px;
   }
+
 }
 
 
 
-
-
-/* ===================== PAGE CONTACT ===================== */
-
-.contact-page {
-  background-color: #f5f5f7; /* même fond que la page projets */
-  padding: 60px 0 80px;
-  min-height: 100vh;
-  text-align: center;
-}
+ .contact-page {
+  background: linear-gradient(to right, #f5f5f7, #ecebff);
+  padding: 80px 0;}
 
 .contact-intro {
-  max-width: 760px;
-  margin: 0 auto 45px;
-  font-size: 1rem;
-  line-height: 1.7;
-  color: #666;
+  max-width: 800px;
+  margin: 0 auto 50px;
   text-align: center;
+  font-size: 1.1rem;
+  color: #555;
 }
 
-/* Bloc principal : infos + formulaire */
+/* GRID */
 .contact-wrapper {
   display: grid;
-  grid-template-columns: 1fr 1fr; /* 2 colonnes */
-  gap: 30px;
-  align-items: stretch;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
 }
 
-/* Cartes */
+/* CARTES */
 .contact-info-card,
 .contact-form-card {
-  background-color: #fff;
-  border-radius: 18px;
-  padding: 30px 25px;
-  box-shadow: 0 8px 22px rgba(0, 0, 0, 0.06);
-  text-align: left;
+  background: #fff;
+  padding: 35px;
+  border-radius: 20px;
+  box-shadow: 0 12px 30px rgba(0,0,0,0.08);
 }
 
-/* Titres internes */
+/* TITRES */
 .contact-info-card h2,
 .contact-form-card h2 {
-  font-size: 1.5rem;
-  color: #6c63ff;
-  margin-bottom: 15px;
+  color: #6C63FF;
+  margin-bottom: 20px;
 }
 
-/* Texte de la carte info */
-.contact-info-card p {
-  font-size: 1rem;
-  line-height: 1.7;
-  color: #666;
-  margin-bottom: 24px;
-}
-
-/* Lignes d'information */
+/* INFOS */
 .contact-item {
-  margin-bottom: 16px;
-  padding-bottom: 14px;
-  border-bottom: 1px solid #eee;
+  margin-bottom: 20px;
 }
 
 .contact-label {
+  font-weight: bold;
   display: block;
-  font-weight: 700;
-  color: #333;
   margin-bottom: 5px;
 }
 
 .contact-value {
   color: #666;
-  font-size: 1rem;
 }
 
-/* ===================== FORMULAIRE ===================== */
-
-.contact-form {
+/* LIENS WHATSAPP TELEGRAM */
+.contact-links {
   display: flex;
-  flex-direction: column;
-  gap: 18px;
+  gap: 15px;
+  margin-top: 10px;
 }
 
+.contact-links a {
+  padding: 10px 18px;
+  border-radius: 10px;
+  color: white;
+  font-weight: 600;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+/* WhatsApp */
+.whatsapp {
+  background: #25D366;
+}
+
+.whatsapp:hover {
+  background: #1ebe5d;
+}
+
+/* Telegram */
+.telegram {
+  background: #0088cc;
+}
+
+.telegram:hover {
+  background: #0077b5;
+}
+
+/* FORMULAIRE */
 .form-group {
-  display: flex;
-  flex-direction: column;
+  margin-bottom: 18px;
 }
 
 .form-group label {
-  font-size: 0.95rem;
+  display: block;
+  margin-bottom: 6px;
   font-weight: 600;
-  color: #333;
-  margin-bottom: 8px;
 }
 
 .form-group input {
-  height: 48px;
-  border: 1px solid #ddd;
+  width: 100%;
+  height: 50px;
   border-radius: 12px;
+  border: 1px solid #ddd;
   padding: 0 15px;
-  font-size: 0.95rem;
-  outline: none;
-  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+  font-size: 1rem;
 }
 
-/* Effet quand on clique dans le champ */
-.form-group input:focus {
-  border-color: #6c63ff;
-  box-shadow: 0 0 0 3px rgba(108, 99, 255, 0.12);
-}
-
-/* Bouton */
+/* BOUTON */
 .contact-btn {
-  background-color: #6c63ff;
-  color: #fff;
+  width: 100%;
+  height: 50px;
+  background: #6C63FF;
+  color: white;
   border: none;
   border-radius: 12px;
-  height: 50px;
   font-size: 1rem;
   font-weight: 600;
   cursor: pointer;
-  transition: background-color 0.25s ease, transform 0.2s ease;
+  transition: 0.3s;
 }
 
 .contact-btn:hover {
-  background-color: #5a52e0;
-  transform: translateY(-2px);
+  background: #5a52e0;
 }
 
-/* ===================== RESPONSIVE ===================== */
-
-@media (max-width: 992px) {
+/* RESPONSIVE */
+@media (max-width: 900px) {
   .contact-wrapper {
-    grid-template-columns: 1fr; /* une seule colonne */
+    grid-template-columns: 1fr;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.passions-page {
+  background: #f5f5f7;
+  padding: 60px 0 90px;
+  min-height: 100vh;
+}
+.container h1{
+  text-align: center;
+}
+.passions-intro {
+  max-width: 760px;
+  margin: 0 auto 40px;
+  text-align: center;
+  color: #666;
+  line-height: 1.7;
+  font-size: 1rem;
+}
+
+.passions-layout {
+  display: grid;
+  grid-template-columns: 1.4fr 1fr;
+  grid-template-areas:
+    "large small1"
+    "large small2"
+    "wide wide";
+  gap: 24px;
+}
+
+.passion-large {
+  grid-area: large;
+  height: 500px;
+}
+
+.passion-small:nth-of-type(2) {
+  grid-area: small1;
+  height: 250px;
+}
+
+.passion-small:nth-of-type(3) {
+  grid-area: small2;
+  height:250px;
+}
+
+.passion-wide {
+  grid-area: wide;
+  height: 400px;
+}
+
+.passion-box {
+  position: relative;
+  overflow: hidden;
+  border-radius: 24px;
+  box-shadow: 0 14px 30px rgba(0, 0, 0, 0.08);
+  background: #ddd;
+  isolation: isolate;
+}
+
+.passion-box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.5s ease;
+}
+
+.passion-overlay {
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(to top, rgba(10, 10, 20, 0.82), rgba(10, 10, 20, 0.18)),
+    linear-gradient(135deg, rgba(108, 99, 255, 0.18), transparent 45%);
+  z-index: 1;
+}
+
+.passion-text {
+  position: absolute;
+  left: 24px;
+  right: 24px;
+  bottom: 24px;
+  z-index: 2;
+  color: #fff;
+}
+
+.passion-tag {
+  display: inline-block;
+  margin-bottom: 12px;
+  padding: 7px 14px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.14);
+  backdrop-filter: blur(4px);
+  font-size: 0.82rem;
+  font-weight: 600;
+  letter-spacing: 0.3px;
+}
+
+.passion-text h2,
+.passion-text h3 {
+  margin-bottom: 10px;
+  font-weight: 700;
+}
+
+.passion-text h2 {
+  font-size: 2rem;
+}
+
+.passion-text h3 {
+  font-size: 1.4rem;
+}
+
+.passion-text p {
+  line-height: 1.7;
+  color: rgba(255, 255, 255, 0.92);
+  max-width: 90%;
+}
+
+.passion-box:hover img {
+  transform: scale(1.08);
+}
+
+.passion-box::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border: 1px solid rgba(108, 99, 255, 0.22);
+  border-radius: 24px;
+  z-index: 3;
+  pointer-events: none;
+}
+
+@media (max-width: 950px) {
+  .passions-layout {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "large"
+      "small1"
+      "small2"
+      "wide";
+  }
+
+  .passion-large,
+  .passion-small,
+  .passion-wide {
+    min-height: 300px;
+  }
+
+  .passion-text h2 {
+    font-size: 1.6rem;
   }
 }
 
 @media (max-width: 600px) {
-  .contact-info-card,
-  .contact-form-card {
-    padding: 22px 18px;
+  .passion-text {
+    left: 18px;
+    right: 18px;
+    bottom: 18px;
   }
 
-  .contact-intro {
+  .passion-text h2 {
+    font-size: 1.35rem;
+  }
+
+  .passion-text h3 {
+    font-size: 1.15rem;
+  }
+
+  .passion-text p {
     font-size: 0.95rem;
+    max-width: 100%;
+  }
+}
+
+.passion-large {
+  min-height: 400px;
+}
+
+.passion-small:nth-of-type(2) {
+  min-height: 160px;
+}
+
+.passion-small:nth-of-type(3) {
+  min-height: 160px;
+}
+
+.passion-wide {
+  min-height: 180px;
+}
+
+.passion-text h2,
+.passion-text h3 {
+  color: white;
+}
+
+
+
+
+
+.entertainment-page {
+  background: #f5f5f7;
+  padding: 60px 0 90px;
+  min-height: 100vh;
+}
+
+.entertainment-intro {
+  max-width: 780px;
+  margin: 0 auto 40px;
+  text-align: center;
+  color: #666;
+  line-height: 1.7;
+  font-size: 1rem;
+}
+.container h1{
+  text-align: center;
+}
+
+.entertainment-layout {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-areas:
+    "feature feature"
+    "card1 card2"
+    "card3 card4";
+  gap: 24px;
+}
+
+.ent-feature {
+  grid-area: feature;
+  height: 300px;
+}
+
+.ent-card:nth-of-type(2) {
+  grid-area: card1;
+}
+
+.ent-card:nth-of-type(3) {
+  grid-area: card2;
+}
+
+.ent-card:nth-of-type(4) {
+  grid-area: card3;
+}
+
+.ent-card:nth-of-type(5) {
+  grid-area: card4;
+}
+
+.ent-card {
+  height: 240px;
+}
+
+.ent-box {
+  position: relative;
+  overflow: hidden;
+  border-radius: 24px;
+  box-shadow: 0 14px 30px rgba(0, 0, 0, 0.08);
+  isolation: isolate;
+  background: #ddd;
+}
+
+.ent-box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.5s ease;
+}
+
+.ent-overlay {
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(to top, rgba(10, 10, 20, 0.82), rgba(10, 10, 20, 0.18)),
+    linear-gradient(135deg, rgba(108, 99, 255, 0.16), transparent 45%);
+  z-index: 1;
+}
+
+.ent-text {
+  position: absolute;
+  left: 24px;
+  right: 24px;
+  bottom: 24px;
+  z-index: 2;
+  color: white;
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.65);
+}
+
+.ent-tag {
+  display: inline-block;
+  margin-bottom: 12px;
+  padding: 7px 14px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.14);
+  backdrop-filter: blur(4px);
+  font-size: 0.82rem;
+  font-weight: 600;
+}
+
+.ent-text h2,
+.ent-text h3 {
+  margin-bottom: 10px;
+  font-weight: 700;
+  color: white;
+}
+
+.ent-text h2 {
+  font-size: 2rem;
+}
+
+.ent-text h3 {
+  font-size: 1.35rem;
+}
+
+.ent-text p {
+  color: rgba(255, 255, 255, 0.92);
+  line-height: 1.65;
+  max-width: 92%;
+}
+
+.ent-box:hover img {
+  transform: scale(1.08);
+}
+
+.ent-box::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border: 1px solid rgba(108, 99, 255, 0.22);
+  border-radius: 24px;
+  z-index: 3;
+  pointer-events: none;
+}
+
+@media (max-width: 950px) {
+  .entertainment-layout {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "feature"
+      "card1"
+      "card2"
+      "card3"
+      "card4";
+  }
+
+  .ent-feature {
+    height: 260px;
+  }
+
+  .ent-card {
+    height: 220px;
+  }
+
+  .ent-text h2 {
+    font-size: 1.55rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .ent-text {
+    left: 18px;
+    right: 18px;
+    bottom: 18px;
+  }
+
+  .ent-text h2 {
+    font-size: 1.3rem;
+  }
+
+  .ent-text h3 {
+    font-size: 1.1rem;
+  }
+
+  .ent-text p {
+    font-size: 0.95rem;
+    max-width: 100%;
   }
 }
 
